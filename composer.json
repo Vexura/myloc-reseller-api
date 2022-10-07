@@ -2,6 +2,7 @@
     "name": "vexura/myloc-reseller-api",
     "description": "A full-featured implementation of the MyLoc-Reseller API",
     "type": "library",
+    "license": "GPL-3.0-or-later",
     "minimum-stability": "stable",
     "prefer-stable": true,
     "authors": [
