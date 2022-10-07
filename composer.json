@@ -2,7 +2,6 @@
     "name": "vexura/myloc-reseller-api",
     "description": "A full-featured implementation of the MyLoc-Reseller API",
     "type": "library",
-    "keywords": ["Reselling", "Hosting", "Reseller-Services", "PHP", "API", "Domain"],
     "minimum-stability": "stable",
     "prefer-stable": true,
     "authors": [

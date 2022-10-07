@@ -9,6 +9,8 @@ use MyLocAPI\Currency\Currency;
 use MyLocAPI\Exception\ParameterException;
 use MyLocAPI\Networking\Networking;
 use MyLocAPI\Products\Server\Server;
+use MyLocAPI\Store\Store;
+use MyLocAPI\WHMCS\WHMCS;
 use Psr\Http\Message\ResponseInterface;
 
 class MyLocAPI
@@ -20,6 +22,8 @@ class MyLocAPI
     private $serverHandler;
     private $currencyHandler;
     private $networkingHandler;
+    private $storeHandler;
+    private $whmcsHandler;
 
     /**
      * MyLocAPI constructor.
@@ -77,6 +81,24 @@ class MyLocAPI
     {
         if (!$this->networkingHandler) $this->networkingHandler = new Networking($this);
         return $this->networkingHandler;
+    }
+
+    /**
+     * @return Store
+     */
+    public function store(): Store
+    {
+        if (!$this->storeHandler) $this->storeHandler = new Store($this);
+        return $this->storeHandler;
+    }
+
+    /**
+     * @return WHMCS
+     */
+    public function whmcs(): WHMCS
+    {
+        if (!$this->whmcsHandler) $this->whmcsHandler = new WHMCS($this);
+        return $this->whmcsHandler;
     }
 
 
