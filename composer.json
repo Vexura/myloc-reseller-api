@@ -1,0 +1,32 @@
+{
+    "name": "vexura/myloc-reseller-api",
+    "description": "A full-featured implementation of the MyLoc-Reseller API",
+    "type": "library",
+    "keywords": ["Reselling", "Hosting", "Reseller-Services", "PHP", "API", "Domain"],
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "authors": [
+        {
+            "name": "Julien Michell Herwig",
+            "email": "info@vexura.eu",
+            "homepage": "https://vexura.eu"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/Vexura/myloc-reseller-api/issues",
+        "source": "https://github.com/Vexura/myloc-reseller-api"
+    },
+    "require": {
+        "php": ">=7.2",
+        "guzzlehttp/guzzle": "^6.3",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "MyLocAPI\\": "src/"
+        }
+    }
+}
