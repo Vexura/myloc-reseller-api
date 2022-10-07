@@ -72,7 +72,7 @@ class MyLocAPI
     {
         return $this->apiToken;
     }
-    
+
 
     /**
      * @return Credentials
